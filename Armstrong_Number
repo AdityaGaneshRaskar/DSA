@@ -1,0 +1,39 @@
+'''While Loop''':
+
+numb=153
+def armstrong(numb):
+  n=numb
+  # p=len(str(numb))
+  count=0
+  while numb>0:
+    numb=numb//10
+    count+=1
+  numb=n
+  result=0
+  while numb>0:
+    ld=numb%10
+    ld_sum=ld**count
+    result=result+ld_sum
+    numb=numb//10
+  return n==result
+
+print(armstrong(numb))
+
+'''For loop'''
+
+numb=153
+
+def armstrong(numb):
+  n=numb
+  result=0
+  power=len(str(numb))
+  for digit in str(numb):
+    digit=int(digit)
+    pr=digit**power
+    result=result+pr
+
+  return n==result
+
+print(armstrong(numb))
+    
+
