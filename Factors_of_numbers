@@ -1,0 +1,17 @@
+def factor(n):  
+  result=[]
+  numb=n
+  for digit in range(numb):
+    if numb % (digit+1)==0:
+      result.append(digit+1)
+
+  return result
+
+number=int(input("enter the number:"))
+print(factor(number))
+
+
+
+
+
+  
